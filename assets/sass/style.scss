@@ -1,0 +1,22 @@
+@import './base/reset';
+
+@import './helpers/variables';
+@import './helpers/mixins';
+
+@import './layout/grid';
+
+.text{
+    position: fixed;
+    
+    & nav ul {
+        list-style: none;
+    }
+}
+.content-experience{
+    @include experience;
+    margin-top: 150px
+}
+.content-projects{
+    @include projects;
+    margin-top: 150px;
+}

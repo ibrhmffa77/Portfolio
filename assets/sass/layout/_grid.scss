@@ -1,0 +1,28 @@
+
+
+#portfolio{
+    background-color: $bg-body;
+
+    .container{
+        margin: 0 auto;
+        width: 1280px;
+        color: $color-text;
+        
+    
+         .row{
+            display: flex;
+
+            .col-6{
+                margin: 100px 0;
+                color: $color-text;
+                font-size: $font-text;
+                a{
+                    text-decoration: none;
+                    color: $color-a;
+                }
+            }
+        }
+        
+    }
+
+}

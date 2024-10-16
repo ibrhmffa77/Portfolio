@@ -1,0 +1,61 @@
+@mixin experience(){
+
+
+        .content-experience-inform{
+            display: flex;
+            gap: 30px;
+            width: 576px;
+            margin-top: 10px;
+
+            .content-experience-date{
+                white-space: nowrap;
+               width: 110px;
+            }
+            .content-experience-action{
+                width: 466px;
+            }
+            ul{
+                display: flex;
+                flex-wrap: wrap;
+                gap: 5px;
+                padding: 5px;
+                list-style: none;
+                & li> div{
+                    padding: 10px;
+                    background-color: #041426;
+                    border-radius: 10px;
+                    color: rgba(20, 243, 236, 0.769);
+                }
+            }
+            
+        }
+    
+
+}
+@mixin projects(){
+    .content-projects-inform{
+        display: flex;
+        gap: 30px;
+        margin-top: 10px;
+
+        & img{
+            width: 110px;
+            height: auto;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        ul{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 5px;
+            padding: 5px;
+            list-style: none;
+            & li> div{
+                padding: 10px;
+                background-color: #041426;
+                border-radius: 10px;
+                color: rgba(20, 243, 236, 0.769);
+            }
+        }
+    }
+}
