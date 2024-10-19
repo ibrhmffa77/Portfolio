@@ -3,9 +3,9 @@
     transition: background-position 0.1s ease; 
 }
 
-#portfolio{
-    // background-color: $bg-body;
-    height: auto;
+#portfolio, #archive{
+    background-color: $bg-body;
+    height: 100vh;
     overflow-y: scroll;
     z-index: 1;
     position: relative;
@@ -13,11 +13,14 @@
     .container{
         margin: 0 auto;
         width: 1280px;
-        color: $color-text;
         
     
          .row{
             display: flex;
+            h1{
+                font-size: 40px;
+                color: white;
+            }
 
             .col-6{
                 margin: 100px 0;

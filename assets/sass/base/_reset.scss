@@ -8,9 +8,13 @@
 
 
 body {
-    height: auto;
+    height: 100vh;
     margin: 0;
     background-color: rgba(7, 14, 30, 0.945); 
     position: relative;
     overflow-y: scroll; 
+    background-color: #1e1e2e;
+    color: #ddd;
+    margin: 0;
+    padding: 20px
 }

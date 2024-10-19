@@ -6,25 +6,83 @@
   font-family: Arial, sans-serif;
 }
 
-#portfolio {
+body {
+  height: 100vh;
+  margin: 0;
   background-color: rgba(7, 14, 30, 0.945);
+  position: relative;
+  overflow-y: scroll;
+  background-color: #1e1e2e;
+  color: #ddd;
+  margin: 0;
+  padding: 20px;
 }
-#portfolio .container {
+
+#gradient-overlay {
+  pointer-events: none;
+  transition: background-position 0.1s ease;
+}
+
+#portfolio, #archive {
+  background-color: rgba(7, 14, 30, 0.945);
+  height: 100vh;
+  overflow-y: scroll;
+  z-index: 1;
+  position: relative;
+}
+#portfolio .container, #archive .container {
   margin: 0 auto;
   width: 1280px;
-  color: #94a3b8;
 }
-#portfolio .container .row {
+#portfolio .container .row, #archive .container .row {
   display: flex;
 }
-#portfolio .container .row .col-6 {
+#portfolio .container .row h1, #archive .container .row h1 {
+  font-size: 40px;
+  color: white;
+}
+#portfolio .container .row .col-6, #archive .container .row .col-6 {
   margin: 100px 0;
   color: #94a3b8;
   font-size: 16px;
 }
-#portfolio .container .row .col-6 a {
+#portfolio .container .row .col-6 a, #archive .container .row .col-6 a {
   text-decoration: none;
   color: #e2e8f0;
+}
+
+.card {
+  background-color: rgba(7, 14, 30, 0.945);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  background-color: rgba(7, 14, 30, 0.945);
+}
+
+th, td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #444;
+}
+
+th {
+  color: #f4f4f4;
+}
+
+td {
+  color: #f4f4f4;
+}
+
+a {
+  color: #1e90ff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
 }
 
 .text {
